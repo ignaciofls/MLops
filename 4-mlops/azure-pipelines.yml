@@ -7,9 +7,9 @@ trigger:
 - master
 
 variables: { 
-  mlWorkspaceConnection: 'build-demo' ,
-  mlWorkspaceName: 'build-2019-demo',
-  resourceGroupName: 'scottgu-all-hands'
+  mlWorkspaceConnection: 'aml-workspace-connection' ,
+  mlWorkspaceName: 'mlopsdb-AML-WS',
+  resourceGroupName: 'mlopsdb-AML-RG'
   }
 
 pool:
