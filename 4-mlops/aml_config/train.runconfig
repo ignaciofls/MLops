@@ -3,7 +3,7 @@
   "arguments": [
 
   ],
-  "target": "cpu",
+  "target": "testNov19",
   "framework": "Python",
   "communicator": "None",
   "autoPrepareEnvironment": true,
