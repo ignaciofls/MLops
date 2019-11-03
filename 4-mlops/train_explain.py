@@ -15,7 +15,7 @@ from azureml.core import Run, Dataset, Workspace
 ws = Run.get_context().experiment.workspace
 os.makedirs('./outputs', exist_ok=True)
 
-attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition').to_dataframe()
+attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition')
 
 # Dropping Employee count as all values are 1 and hence attrition is independent of this feature
 attritionData = attritionData.drop(['EmployeeCount'], axis=1)
