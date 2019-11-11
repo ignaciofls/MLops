@@ -14,7 +14,7 @@ from azureml.core import Run, Dataset, Workspace
 
 ws = Run.get_context().experiment.workspace
 os.makedirs('./outputs', exist_ok=True)
-#comment2
+#comment
 
 attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition2').to_pandas_dataframe()
 
