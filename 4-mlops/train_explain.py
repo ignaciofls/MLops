@@ -18,6 +18,7 @@ os.makedirs('./outputs', exist_ok=True)
 
 attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition2').to_pandas_dataframe()
 
+
 # Dropping Employee count as all values are 1 and hence attrition is independent of this feature
 attritionData = attritionData.drop(['EmployeeCount'], axis=1)
 # Dropping Employee Number since it is merely an identifier
