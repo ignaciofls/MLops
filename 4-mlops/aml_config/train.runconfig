@@ -3,7 +3,7 @@
   "arguments": [
 
   ],
-  "target": "testNov19",
+  "target": "testJan2020",
   "framework": "Python",
   "communicator": "None",
   "autoPrepareEnvironment": true,
