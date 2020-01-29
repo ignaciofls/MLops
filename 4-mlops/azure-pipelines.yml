@@ -37,21 +37,6 @@ steps:
   inputs:
     azureSubscription: $(mlWorkspaceConnection)
     scriptLocation: inlineScript
-    inlineScript: 'az ml pipeline create --name trainattrition -y training-ml-pipeline.yml'
+    inlineScript: 'az ml pipeline run submit-pipeline --pipeline-id trainattrition -y training-ml-pipeline.yml'
     workingDirectory: '4-mlops'
 
-- task: AzureCLI@1
-  displayName: 'Submit ML pipeline'
-  inputs:
-    azureSubscription: $(mlWorkspaceConnection)
-    scriptLocation: inlineScript
-    inlineScript: 'az ml pipeline publish-draft -i trainattrition'
-    workingDirectory: '4-mlops'
-
-- task: AzureCLI@1
-  displayName: 'Submit pipeline run'
-  inputs:
-    azureSubscription: $(mlWorkspaceConnection)
-    scriptLocation: inlineScript
-    inlineScript: 'az ml run --pipeline-id trainattrition --verbose'
-    workingDirectory: '4-mlops'
