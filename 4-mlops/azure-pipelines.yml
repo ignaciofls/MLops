@@ -42,9 +42,9 @@ steps:
     workingDirectory: '4-mlops'
 
 - task: AzureCLI@1
-  displayName: 'Submit script run'
+  displayName: 'Submit pipeline run'
   inputs:
     azureSubscription: $(mlWorkspaceConnection)
     scriptLocation: inlineScript
-    inlineScript: 'az ml run submit-script -c train -e test train_explain.py'
+    inlineScript: 'az ml run --pipeline-id trainattrition --verbose'
     workingDirectory: '4-mlops'
