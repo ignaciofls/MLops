@@ -45,7 +45,7 @@ steps:
   inputs:
     azureSubscription: $(mlWorkspaceConnection)
     scriptLocation: inlineScript
-    inlineScript: 'az ml pipeline publish publish-draft trainattrition'
+    inlineScript: 'az ml pipeline publish-draft trainattrition'
     workingDirectory: '4-mlops'
 
 - task: AzureCLI@1
