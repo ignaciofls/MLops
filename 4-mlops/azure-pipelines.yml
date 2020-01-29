@@ -37,6 +37,6 @@ steps:
   inputs:
     azureSubscription: $(mlWorkspaceConnection)
     scriptLocation: inlineScript
-    inlineScript: 'az ml pipeline run submit-pipeline --pipeline-yaml training-ml-pipeline.yml'
+    inlineScript: 'az ml run submit-pipeline --pipeline-yaml training-ml-pipeline.yml'
     workingDirectory: '4-mlops'
 
