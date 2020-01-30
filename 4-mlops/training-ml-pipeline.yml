@@ -13,7 +13,7 @@
                        destination: Output
                        datastore: workspaceblobstore
                        type: mount
-            ExplainStep:
+           ExplainStep:
                python_script_step:
                    name: "PythonScriptStep"
                    script_name: "explain.py"
