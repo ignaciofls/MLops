@@ -75,7 +75,7 @@ with open(x_test_pkl, 'wb') as file:
 clf.fit(x_train, y_train)
 model = clf.steps[-1][1]
 
-y_pred = classifier.predict(x_test)
+y_pred = clf.predict(x_test)
 accu = accuracy_score(y_test, y_pred)
 
 model_file_name = 'log_reg.pkl'
