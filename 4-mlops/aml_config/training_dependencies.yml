@@ -15,6 +15,7 @@ dependencies:
   - azureml-defaults
   - azureml-dataprep
   - azureml-contrib-explain-model
+  - azureml-contrib-interpret
   - azureml-core
   - azureml-telemetry
   - azureml-explain-model
