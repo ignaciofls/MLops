@@ -91,4 +91,4 @@ run.log("accuracy", accu)
 
 # Register the model
 run.upload_file('original_model.pkl', os.path.join('./outputs/', model_file_name))
-original_model = run.register_model(model_name='IBM_attrition_model', model_path='original_model.pkl')
+original_model = run.register_model(model_name='Attrition_model', model_path='original_model.pkl')
