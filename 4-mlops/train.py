@@ -128,7 +128,7 @@ print('global importance rank: {}'.format(global_explanation.global_importance_r
 # multiple explanations can be uploaded
 client.upload_model_explanation(global_explanation, comment='global explanation: all features',model_id=original_model.id)
 # or you can only upload the explanation object with the top k feature info
-client.upload_model_explanation(global_explanation, top_k=2, comment='global explanation: Only top 2 features')
+#client.upload_model_explanation(global_explanation, top_k=2, comment='global explanation: Only top 2 features')
 
 
 # Note: PFIExplainer does not support local explanations
