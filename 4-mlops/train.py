@@ -7,6 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from sklearn_pandas import DataFrameMapper
+from sklearn.metrics import accuracy_score
 import os
 import pandas as pd
 
