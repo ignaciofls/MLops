@@ -4,7 +4,7 @@
            TrainStep:
                python_script_step:
                    name: "PythonScriptStep"
-                   script_name: "train_explain.py"
+                   script_name: "train.py"
                    allow_reuse: True
                    source_directory: "."
                runconfig: 'aml_config/train.runconfig'
