@@ -74,6 +74,9 @@ with open(x_test_pkl, 'wb') as file:
 clf.fit(x_train, y_train)
 model = clf.steps[-1][1]
 
+y_pred = classifier.predict(x_test)
+accu = accuracy_score(y_test, y_pred)
+
 model_file_name = 'log_reg.pkl'
 
 # save model in the outputs folder so it automatically get uploaded
@@ -83,6 +86,7 @@ with open(model_file_name, 'wb') as file:
 
 run = Run.get_context()
 run.upload_file('x_test_ibm.pkl', os.path.join('./outputs/', x_test_pkl))
+run.log("accuracy", accu)
 
 # Register the model
 run.upload_file('original_model.pkl', os.path.join('./outputs/', model_file_name))
