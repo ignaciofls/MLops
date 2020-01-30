@@ -19,5 +19,6 @@
                    script_name: "explain.py"
                    allow_reuse: True
                    source_directory: "."
+               runconfig: 'aml_config/train.runconfig'
         
         
