@@ -135,16 +135,16 @@ client.upload_model_explanation(global_explanation, comment='global explanation:
 # You can pass a specific data point or a group of data points to the explain_local function
 
 # E.g., Explain the first data point in the test set
-instance_num = 1
-local_explanation = explainer.explain_local(x_test[:instance_num])
+#instance_num = 1
+#local_explanation = explainer.explain_local(x_test[:instance_num])
 
 # Get the prediction for the first member of the test set and explain why model made that prediction
-prediction_value = clf.predict(x_test)[instance_num]
+#prediction_value = clf.predict(x_test)[instance_num]
 
-sorted_local_importance_values = local_explanation.get_ranked_local_values()[prediction_value]
-sorted_local_importance_names = local_explanation.get_ranked_local_names()[prediction_value]
+#sorted_local_importance_values = local_explanation.get_ranked_local_values()[prediction_value]
+#sorted_local_importance_names = local_explanation.get_ranked_local_names()[prediction_value]
 
-print('local importance values: {}'.format(sorted_local_importance_values))
-print('local importance names: {}'.format(sorted_local_importance_names))
+#print('local importance values: {}'.format(sorted_local_importance_values))
+#print('local importance names: {}'.format(sorted_local_importance_names))
 
-ExplanationDashboard(global_explanation, model, x_test)
+#ExplanationDashboard(global_explanation, model, x_test)
