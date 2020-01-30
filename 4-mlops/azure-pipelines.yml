@@ -33,7 +33,7 @@ steps:
     workingDirectory: '4-mlops'
 
 - task: AzureCLI@1
-  displayName: 'Create ML pipeline'
+  displayName: 'Create and submit the ML pipeline'
   inputs:
     azureSubscription: $(mlWorkspaceConnection)
     scriptLocation: inlineScript
