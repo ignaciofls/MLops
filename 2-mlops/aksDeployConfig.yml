@@ -2,7 +2,7 @@ computeType: AKS
 autoScaler:
     autoscaleEnabled: True
     minReplicas: 1
-    maxReplicas: 3
+    maxReplicas: 2
     refreshPeriodInSeconds: 10
     targetUtilization: 70
 authEnabled: True
