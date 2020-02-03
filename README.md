@@ -8,7 +8,7 @@ Main addons on top of danielsc:
 - Fix of Azure Devops build pipeline to use AzureML pipeline (and avoid calling the python script straightaway)
 - Addon of metric logging, to make them available in the model registry
 - Addon of interpretability section, viewable in the AzureML unit
-![](media/UIExpl.png)
+![](2-mlops/media/UIExpl.png)
 - Unit testing placeholder step in AzureML pipeline
 - Trigger added when new data is found in dataset
 - Linkage with Azure Monitoring
