@@ -19,10 +19,6 @@ os.makedirs('./outputs', exist_ok=True)
 
 attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition2').to_pandas_dataframe()
 
-
-
-
-
 # Dropping Employee count as all values are 1 and hence attrition is independent of this feature
 attritionData = attritionData.drop(['EmployeeCount'], axis=1)
 # Dropping Employee Number since it is merely an identifier
@@ -62,7 +58,7 @@ clf = Pipeline(steps=[('preprocessor', DataFrameMapper(transformations)),
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(attritionXData, 
                                                     target, 
-                                                    test_size = 0.30,
+                                                    test_size = 0.35,
                                                     random_state=0,
                                                     stratify=target)
 
