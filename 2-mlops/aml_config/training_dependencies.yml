@@ -11,7 +11,7 @@ dependencies:
 - python=3.6.2
 
 - pip:
-  - sklearn_pandas
+  - sklearn_pandas==1.8.0
   - azureml-defaults
   - azureml-dataprep
   - azureml-contrib-explain-model
