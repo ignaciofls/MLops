@@ -16,3 +16,6 @@ Main addons on top of danielsc's repo:
 Notes for trigger:
 - Blobstorage container with a trigger function when something new lands: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob?tabs=python#trigger---example 
 - Function calls https://docs.microsoft.com/en-us/rest/api/azure/devops/build/builds/queue?view=azure-devops-rest-5.1 (some help here: https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-5.1)
+
+E2E this is the MLops architecture we implement:
+![](2-mlops/media/MLops.png)
