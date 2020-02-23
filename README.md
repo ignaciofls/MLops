@@ -8,10 +8,12 @@ Main addons on top of danielsc's repo:
 - Fix of Azure Devops build pipeline to use AzureML pipeline (and avoid calling the python script straightaway)
 - Addon of metric logging, to make them available in the model registry
 - Addon of interpretability section, viewable in the AzureML unit
+
 ![](2-mlops/media/UIExpl.png)
 - Azure Function to trigger a build devops pipeline whenever our dataset changes (see blobtrigger code)
 - Placeholder for Unit testing steps in AzureML pipeline
 - Linkage with Azure Monitoring
 
 E2E this is the MLops architecture we implement:
+
 ![](2-mlops/media/MLops.png)
