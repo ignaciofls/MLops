@@ -15,8 +15,8 @@ from azureml.core import Run, Dataset, Workspace
 
 ws = Run.get_context().experiment.workspace
 os.makedirs('./outputs', exist_ok=True)
-#comment
 
+#change IBM-Employee-Attrition2 by your dataset name in AzureML workspace
 attritionData = Dataset.get_by_name(ws,'IBM-Employee-Attrition2').to_pandas_dataframe()
 
 # Dropping Employee count as all values are 1 and hence attrition is independent of this feature
